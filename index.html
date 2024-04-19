@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Box Hunt</h1>
+    <div class=""container>
+        <Header>
+            <div class="buttons">
+                <button id="start">START</button>
+                <button id="pause">PAUSE</button>
+                <button id="reset">RESET</button>
+                <input type="number" name="timeInterval" id="timeInterval" value="" placeholder="Enter Time Interval (Sec)" />
+            </div>
+        </Header>
+        <main>
+            <div class="display" id="display">
+                <div id="pix" class="active"></div>
+            </div>
+
+            <div class="result-container">
+
+                <div class="mouseClickNum">
+                    <ul>
+                        <li class="list">Mouse Click Number</li>
+                        <div id="mouseClickNum">
+                            <!-- <li>1</li>
+                            <li>2</li> -->
+                        </div>
+                        
+                    </ul>
+                </div>
+
+                <div class="reactionTime">
+                    <ul>
+                        <li class="list">Reaction Time</li>
+                        <div id="reactionTime">
+                            <!-- <li>1s</li>
+                            <li>2s</li> -->
+                        </div>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div class="stop-watch">
+        <h2>Stop Watch</h2>
+         <div id="stopwatch" >00:00:00</div>
+         <button onclick="startStopwatch()">Start</button>
+         <button onclick="stopStopwatch()">Stop</button>
+         <button onclick="resetStopwatch()">Reset</button>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
